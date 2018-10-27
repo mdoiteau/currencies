@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './main/main.component';
-import {CurrencyDetailsComponent} from './currency-details/currency-details.component';
-import {CurrencyDetailsResolver} from './currency-details/currency-details.resolver';
+import {CurrencyDetailsComponent} from './currency/currency-details/currency-details.component';
+import {CurrencyDetailsResolver} from './currency/currency-details/currency-details.resolver';
 import {MainResolver} from './main/main.resolver';
 
 const routes: Routes = [
