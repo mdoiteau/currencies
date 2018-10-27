@@ -14,7 +14,7 @@ export class CurrencyDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    const curDatas:CurrencyDetailsComponent = this._route.snapshot.data['currencyDatas'];
+    const curDatas:CurrencyDetailsComponent = this._route.snapshot.data['currencyDetails'];
     this.currencyDatas = curDatas;
   }
 
