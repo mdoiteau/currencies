@@ -21,8 +21,7 @@ export class CurrencyComponent {
   }
 
   showDetails():void {
-    console.log('Clic to:', this.id, 'Redirect to:', 'currency/'+this.id);
-    this._router.navigateByUrl('currency/'+this.id);
+    this._router.navigate(['currency',  this.id]);
   }
 
 }

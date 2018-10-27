@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, ParamMap, Router} from '@angular/router';
-import {switchMap} from 'rxjs/operators';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-currency-details',
@@ -9,13 +8,14 @@ import {switchMap} from 'rxjs/operators';
 })
 export class CurrencyDetailsComponent implements OnInit {
 
-  id:string;
+  currencyDatas:CurrencyDetailsComponent;
 
   constructor(private _route: ActivatedRoute,){
   }
 
   ngOnInit() {
-    this._route.params.subscribe(value => this.id = value['id'] )
+    const curDatas:CurrencyDetailsComponent = this._route.snapshot.data['currencyDatas'];
+    this.currencyDatas = curDatas;
   }
 
 }

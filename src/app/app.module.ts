@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {CurrencyComponent} from './currency/currency.component';
 import { MainComponent } from './main/main.component';
 import { CurrencyDetailsComponent } from './currency-details/currency-details.component';
+import {CurrencyDetailsResolver} from './currency-details/currency-details.resolver';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { CurrencyDetailsComponent } from './currency-details/currency-details.co
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CurrencyDetailsResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
