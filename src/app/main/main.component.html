@@ -3,12 +3,7 @@
 </div>
 
 <div>
-  <div class="d-flex flex-row currency-list justify-content-center">
-    <currency id="USD" type="national" symbol="$"></currency>
-    <currency id="EUR" type="national" symbol="€"></currency>
-  </div>
-  <div class="d-flex flex-row currency-list justify-content-center">
-    <currency id="JPY" type="national" symbol="￥"></currency>
-    <currency id="CHF" type="national" symbol="CHF"></currency>
+  <div *ngFor="let currency of currencyList" class="d-flex flex-row currency-list justify-content-center">
+    <currency [id]=currency.id [type]=currency.type [symbol]=currency.symbol></currency>
   </div>
 </div>

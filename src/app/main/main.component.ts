@@ -15,7 +15,6 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
     this.currencyList = this.route.snapshot.data['currencyList'];
-    console.log('Main : ', this.currencyList);
   }
 
 }
