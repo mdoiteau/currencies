@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {CurrencyDetailsData} from './currency-details-data.model';
 
 @Component({
   selector: 'app-currency-details',
@@ -8,13 +9,13 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class CurrencyDetailsComponent implements OnInit {
 
-  currencyDatas:CurrencyDetailsComponent;
+  currencyDatas:CurrencyDetailsData;
 
-  constructor(private _route: ActivatedRoute,){
+  constructor(private _route: ActivatedRoute){
   }
 
   ngOnInit() {
-    const curDatas:CurrencyDetailsComponent = this._route.snapshot.data['currencyDetails'];
+    const curDatas:CurrencyDetailsData = this._route.snapshot.data['currencyDetails'];
     this.currencyDatas = curDatas;
   }
 
