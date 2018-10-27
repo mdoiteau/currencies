@@ -20,9 +20,9 @@ export class CurrencyComponent {
   constructor(private _router: Router){
   }
 
-  goDetails():void {
-    console.log('Clic to:', this.id);
-    this._router.navigateByUrl('/currency/'+this.id);
+  showDetails():void {
+    console.log('Clic to:', this.id, 'Redirect to:', 'currency/'+this.id);
+    this._router.navigateByUrl('currency/'+this.id);
   }
 
 }
