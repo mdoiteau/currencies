@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import {CurrencyData} from '../currency-data.model';
 import {Observable} from 'rxjs';
 import {CurrencyDetailsData} from '../currency-details-data.model';
 
@@ -9,7 +8,7 @@ export class CurrencyDetailsServiceMock{
     public static currencyDetailsData: CurrencyDetailsData =
       {
         "id": "USD",
-        // "attributes": {
+        "attributes": {
           "code": "USD",
           "name": "US Dollar",
           "currency_type": "national",
@@ -18,7 +17,7 @@ export class CurrencyDetailsServiceMock{
           "symbol": "$",
           "native_symbol": "$",
           "category": "others"
-        // },
+        },
       }
 
     public getCurrencyDetails(): Observable<any> {

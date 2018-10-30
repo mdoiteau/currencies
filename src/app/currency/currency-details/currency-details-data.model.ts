@@ -1,5 +1,9 @@
 export class CurrencyDetailsData {
   public id: string;
+  public attributes: CurrencyDetails;
+}
+
+export class CurrencyDetails {
   public code: string;
   public name: string;
   public currency_type: string;
