@@ -8,6 +8,9 @@ import { MainComponent } from './main/main.component';
 import { CurrencyDetailsComponent } from './currency/currency-details/currency-details.component';
 import {CurrencyDetailsResolver} from './currency/currency-details/currency-details.resolver';
 import {MainResolver} from './main/main.resolver';
+import {CurrencyService} from './currency/service/currency.service';
+import {ConnectionBackend, Http, RequestOptions} from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,13 @@ import {MainResolver} from './main/main.resolver';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     CurrencyDetailsResolver,
-    MainResolver
+    MainResolver,
+    CurrencyService
   ],
   bootstrap: [AppComponent]
 })
