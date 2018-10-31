@@ -1,11 +1,11 @@
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
-import {CurrencyDetailsData} from '../currency-details-data.model';
+import {CurrencyDetails} from '../../model/currency-details.model';
 
 @Injectable()
 export class CurrencyDetailsServiceMock{
 
-    public static currencyDetailsData: CurrencyDetailsData =
+    public static currencyDetailsData: CurrencyDetails =
       {
         "id": "USD",
         "attributes": {

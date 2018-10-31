@@ -1,9 +1,9 @@
-export class CurrencyDetailsData {
+export class CurrencyDetails {
   public id: string;
-  public attributes: CurrencyDetails;
+  public attributes: CurrencyAttributes;
 }
 
-export class CurrencyDetails {
+export class CurrencyAttributes {
   public code: string;
   public name: string;
   public currency_type: string;

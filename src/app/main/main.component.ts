@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CurrencyData} from '../currency/currency-data.model';
+import {Currency} from '../currency/model/currency.model';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class MainComponent implements OnInit {
 
-  currencyList:CurrencyData[];
+  currencyList:Currency[];
 
   constructor(private route:ActivatedRoute) { }
 

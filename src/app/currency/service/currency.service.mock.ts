@@ -1,11 +1,11 @@
 import {Injectable} from '@angular/core';
-import {CurrencyData} from '../currency-data.model';
+import {Currency} from '../model/currency.model';
 import {Observable} from 'rxjs';
 
 @Injectable()
 export class CurrencyServiceMock {
 
-    public static currencyDataList: CurrencyData[] = [
+    public static currencyDataList: Currency[] = [
       {
         "id": "USD",
         "type": "national",
