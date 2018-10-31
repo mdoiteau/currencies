@@ -8,7 +8,8 @@ import {CurrencyService} from '../currency/service/currency.service';
 export class MainResolver implements Resolve<Currency[]> {
 
   constructor(
-    private currencyService:CurrencyService){};
+    private currencyService:CurrencyService
+  ){};
 
   resolve(route: ActivatedRouteSnapshot): Promise<Currency[]> {
     return this.currencyService.getCurrencyList().toPromise();
